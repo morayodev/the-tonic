@@ -6,6 +6,9 @@
   &__container {
     width: 50%;
     margin: auto;
+    @include respond(tab-port) {
+      width: 90%;
+    }
     @include respond(phone) {
       width: 90%;
     }
@@ -37,18 +40,19 @@
       padding-bottom: 2rem;
     }
   }
-  &__content p{
-    color:$color-white
+  &__content p {
+    color: $color-white;
   }
-
 }
 .totalCount {
   background-color: $color-primary-dark;
   color: $color-white;
   padding: 6rem 0;
+
   @include respond(phone) {
     padding: 4rem 0;
   }
+
   // text-align: center;
   &__number {
     color: $color-primary-light;
@@ -61,6 +65,9 @@
     width: 50%;
     margin: auto;
     text-align: center;
+    @include respond(tab-port) {
+      width: 90%;
+    }
     @include respond(phone) {
       font-size: 2rem;
       width: 90%;
@@ -95,6 +102,9 @@
   display: flex;
   justify-content: center;
   padding-top: 3rem;
+  @include respond(tab-port) {
+    flex-wrap: wrap;
+  }
   @include respond(phone) {
     display: none;
   }
@@ -117,7 +127,7 @@
     display: none;
     @include respond(phone) {
       text-align: center;
-      padding-bottom: 2rem;
+      padding-bottom: 4rem;
       display: block;
     }
   }
@@ -140,6 +150,9 @@
     margin: auto;
     padding: 5rem 0;
     @include respond(phone) {
+      width: 90%;
+    }
+    @include respond(tab-port) {
       width: 90%;
     }
   }
@@ -181,7 +194,10 @@
   padding: 4rem 0px;
   @include respond(phone) {
     width: 90%;
-    margin: 4rem auto 0;
+    margin: 5rem auto 0;
+  }
+  @include respond(tab-port) {
+    width: 90%;
   }
   &__text {
     color: $color-white;
@@ -189,6 +205,9 @@
     width: 60%;
     margin: auto;
     font-weight: 300;
+    @include respond(tab-port) {
+      width: 100%;
+    }
     @include respond(phone) {
       font-size: 2rem;
       width: 100%;

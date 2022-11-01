@@ -12,24 +12,27 @@
   padding-top: 2rem;
   width: 90%;
   margin: auto;
-
+  &__bar {
+    color: $color-white;
+    font-size: 2rem;
+    display: none;
+    // @include respond(tab-landscape) {
+    //   display: flex;
+    // }
+    @include respond(phone) {
+      display: block;
+    }
+  }
   &__navList {
-    // @extend %align-center;
     list-style: none;
-    // gap: 10;
     color: $color-white;
     font-size: $font-normal;
-    // justify-content: space-between;
-
-    // @extend %align-center;
-    // justify-content: space-between;
   }
   &__nav {
     display: flex;
     @include respond(phone) {
       display: none;
     }
-    // justify-content: space-between;
     &--list {
       margin: 0px 8px;
     }
@@ -46,8 +49,6 @@
     text-align: center;
     color: $color-white;
     padding: 50px 0px;
-    // width: 20%;
-    // margin: auto;
 
     @include respond(phone) {
       padding: 3rem 0px;
@@ -73,6 +74,9 @@
     @include respond(phone) {
       width: 90%;
     }
+    @include respond(tab-port) {
+      width: 70%;
+    }
   }
 }
 .image-container {
@@ -85,12 +89,19 @@
   &__card {
     display: flex;
     flex-direction: column;
+    @include respond(tab-port) {
+      margin-left: 2rem;
+    }
   }
   &__cardone {
     margin-top: 30px;
   }
   &__cardtwo {
     padding: 0px 40px;
+    display: block;
+    @include respond(tab-port) {
+      display: none;
+    }
   }
   @include respond(phone) {
     display: none;

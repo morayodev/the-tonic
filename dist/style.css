@@ -14,6 +14,16 @@
   width: 90%;
   margin: auto;
 }
+.header__bar {
+  color: #fff;
+  font-size: 2rem;
+  display: none;
+}
+@media (max-width: 43.75em) {
+  .header__bar {
+    display: block;
+  }
+}
 .header__navList {
   list-style: none;
   color: #fff;
@@ -73,6 +83,11 @@
     width: 90%;
   }
 }
+@media (max-width: 73.94em) {
+  .header__textBusiness {
+    width: 70%;
+  }
+}
 
 .image-container {
   display: flex;
@@ -82,11 +97,22 @@
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 73.94em) {
+  .image-container__card {
+    margin-left: 2rem;
+  }
+}
 .image-container__cardone {
   margin-top: 30px;
 }
 .image-container__cardtwo {
   padding: 0px 40px;
+  display: block;
+}
+@media (max-width: 73.94em) {
+  .image-container__cardtwo {
+    display: none;
+  }
 }
 @media (max-width: 43.75em) {
   .image-container {
@@ -133,6 +159,11 @@ body {
 .story__container {
   width: 50%;
   margin: auto;
+}
+@media (max-width: 73.94em) {
+  .story__container {
+    width: 90%;
+  }
 }
 @media (max-width: 43.75em) {
   .story__container {
@@ -191,6 +222,11 @@ body {
   margin: auto;
   text-align: center;
 }
+@media (max-width: 73.94em) {
+  .totalCount__heading {
+    width: 90%;
+  }
+}
 @media (max-width: 43.75em) {
   .totalCount__heading {
     font-size: 2rem;
@@ -227,6 +263,11 @@ body {
   justify-content: center;
   padding-top: 3rem;
 }
+@media (max-width: 73.94em) {
+  .team {
+    flex-wrap: wrap;
+  }
+}
 @media (max-width: 43.75em) {
   .team {
     display: none;
@@ -254,7 +295,7 @@ body {
 @media (max-width: 43.75em) {
   .team__position {
     text-align: center;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
     display: block;
   }
 }
@@ -279,6 +320,11 @@ body {
   padding: 5rem 0;
 }
 @media (max-width: 43.75em) {
+  .value__container {
+    width: 90%;
+  }
+}
+@media (max-width: 73.94em) {
   .value__container {
     width: 90%;
   }
@@ -327,7 +373,12 @@ body {
 @media (max-width: 43.75em) {
   .address {
     width: 90%;
-    margin: 4rem auto 0;
+    margin: 5rem auto 0;
+  }
+}
+@media (max-width: 73.94em) {
+  .address {
+    width: 90%;
   }
 }
 .address__text {
@@ -336,6 +387,11 @@ body {
   width: 60%;
   margin: auto;
   font-weight: 300;
+}
+@media (max-width: 73.94em) {
+  .address__text {
+    width: 100%;
+  }
 }
 @media (max-width: 43.75em) {
   .address__text {
@@ -412,7 +468,7 @@ body {
 }
 @media (max-width: 43.75em) {
   .footer__social {
-    width: 70%;
+    width: 90%;
   }
 }
 .footer__social--text {

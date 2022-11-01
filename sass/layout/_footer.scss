@@ -20,7 +20,7 @@
   &__social {
     width: 20%;
     @include respond(phone) {
-      width: 70%;
+      width: 90%;
     }
     // margin: auto;
     &--text {
