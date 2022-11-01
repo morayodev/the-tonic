@@ -1,0 +1,10 @@
+.search--btn {
+  border: 1px solid $color-secondary;
+  background-color: $color-secondary;
+  color: $color-black;
+  padding: 10px 3rem;
+  border-radius: 25px;
+  @include respond(phone) {
+    margin-top: 10px;
+  }
+}

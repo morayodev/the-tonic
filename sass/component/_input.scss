@@ -1,0 +1,14 @@
+.search--input {
+  border: 1px solid $color-white;
+  border-radius: 25px;
+  padding: 10px 2rem;
+  margin-right: 10px;
+  @include respond(phone) {
+    margin-right: 0px;
+
+  }
+  &::placeholder {
+    font-weight: 300;
+    color:  $color-black;
+  }
+}

@@ -1,0 +1,108 @@
+%align-center {
+  display: flex;
+  align-items: center;
+}
+.hero {
+  background-color: $color-primary-dark;
+  height: 500px;
+}
+.header {
+  @extend %align-center;
+  justify-content: space-between;
+  padding-top: 2rem;
+  width: 90%;
+  margin: auto;
+
+  &__navList {
+    // @extend %align-center;
+    list-style: none;
+    // gap: 10;
+    color: $color-white;
+    font-size: $font-normal;
+    // justify-content: space-between;
+
+    // @extend %align-center;
+    // justify-content: space-between;
+  }
+  &__nav {
+    display: flex;
+    @include respond(phone) {
+      display: none;
+    }
+    // justify-content: space-between;
+    &--list {
+      margin: 0px 8px;
+    }
+  }
+  &__loginBtn {
+    border: 1px solid $color-white;
+    border-radius: $border-radius-primary;
+    color: $color-primary-dark;
+    background-color: $color-white;
+    padding: 5px 20px;
+    font-weight: $font-weight-big;
+  }
+  &__text {
+    text-align: center;
+    color: $color-white;
+    padding: 50px 0px;
+    // width: 20%;
+    // margin: auto;
+
+    @include respond(phone) {
+      padding: 3rem 0px;
+    }
+  }
+  &__about {
+    color: $color-primary-light;
+  }
+  &__mainText {
+    font-size: 3rem;
+    @include respond(phone) {
+      font-size: 2rem;
+    }
+  }
+  &__textBusiness {
+    text-align: center;
+    width: 40%;
+    margin: auto;
+    font-weight: $font-weight-normal;
+    padding-top: 10px;
+    color: $color-primary-light;
+    line-height: 1.2;
+    @include respond(phone) {
+      width: 90%;
+    }
+  }
+}
+.image-container {
+  display: flex;
+  // justify-content: space-between;
+  justify-content: center;
+  // padding: 100px 0px;
+  // align-items: center;
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+  }
+  &__cardone {
+    margin-top: 30px;
+  }
+  &__cardtwo {
+    padding: 0px 40px;
+  }
+  @include respond(phone) {
+    display: none;
+  }
+}
+.image-container__show {
+  display: none;
+  @include respond(phone) {
+    // display: block;
+    // width: 90%;
+    // margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+}
