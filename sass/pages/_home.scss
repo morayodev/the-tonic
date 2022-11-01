@@ -37,6 +37,10 @@
       padding-bottom: 2rem;
     }
   }
+  &__content p{
+    color:$color-white
+  }
+
 }
 .totalCount {
   background-color: $color-primary-dark;

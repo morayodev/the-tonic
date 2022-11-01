@@ -165,6 +165,9 @@ body {
     padding-bottom: 2rem;
   }
 }
+.story__content p {
+  color: #fff;
+}
 
 .totalCount {
   background-color: #0a2640;
